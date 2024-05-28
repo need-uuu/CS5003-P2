@@ -1,0 +1,398 @@
+/* Game */
+body{
+  background-image: url('Design/11589900.jpg') ;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-gap: 70px;
+    justify-content: left;
+    align-items: left;
+    width: 1000px;
+    height: 600px;
+    /* height: 100vh; */
+
+}
+
+#gameCanvas {
+    grid-column: 1;
+    width: 480px;
+    height: 533.33px;
+    justify-self: center;
+    align-self: center;
+}
+
+#gameInfo {
+    grid-column: 2;
+    background-color: #5ead8f;
+    border: 4px solid #f5c556;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'goodbrush';
+    width: 220px;
+    height: 400px;
+    margin-top: 130px;
+    letter-spacing: 1px;
+    color: azure;;
+}
+
+
+
+/* Lobby */
+
+#title {
+    text-align: center;
+    padding: 35px 0; 
+    
+}
+
+
+#prospector {
+    font-family:"minecraft";
+    font-size: 88px;
+    color: #2be06d;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 0%;
+
+}
+
+#produced {
+    font-family: 'minecraft';
+    letter-spacing: 2px;
+    font-size: 22px;
+    color:#171717;
+    
+}
+
+#letslogin, #letsregister {
+    margin-top: 3%;
+    font-family: "minecraft";
+    font-size: 40px;
+    text-align: center;
+    color:#171717;
+    -webkit-text-stroke: 0.35px white;
+}
+
+#login, #register {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #171717;
+    background-color: #fcfbf2;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: "minecraft";
+    border-radius: 50px;
+    font-size: larger;
+}
+
+#size{
+  font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+ 
+}
+
+
+  
+#registerButton, #login_button {
+    font-family: "minecraft";
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 0.5px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #2be06d;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    width: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#registerButton:active, #login_button:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+}
+
+#registerButton svg, #login_button svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+#registerButton .play, #login_button .play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+}
+
+#registerButton:hover svg, #login_button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+#registerButton .now, #login_button .now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+#registerButton:hover .now, #login_button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+#registerButton:hover .play, #login_button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+
+#save_button {
+    margin-top: 6%;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 9px;
+    background: #2be06d;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: larger;
+    border: solid 0.5px black;
+   }
+   
+#save_button:hover {
+    box-shadow: 7px 5px 56px -14px green;
+   }
+   
+#save_button:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px green;
+   }
+
+#menuButtonsContainer {
+    display: flex;
+    gap: 10px; 
+    margin-top: 1%;
+
+}
+
+#menu {
+    margin-top: 1%;
+}
+
+#private {
+    display: flex;
+    gap: 10px; 
+    margin-top: -2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 18%;
+  
+}
+
+#winRecords {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3;
+  font-family: 'goodbrush';
+  font-weight: 600;
+  font-style: normal;
+  font-size: larger;
+  color: azure;
+  border: solid 0.5px;
+  width: 456px;
+  height: 238px;
+  margin-top: 3%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Design/Screenshot\ from\ 2024-03-14\ 13-01-08.png);
+  
+}
+
+
+#recordsTable {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  /* margin-bottom: 10%; */
+}
+
+
+
+   
+   @font-face {
+    font-family: 'Chalkduster';
+    src: url('Design/Chalkduster/Chalkduster.woff') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'minecraft';
+    src: url('Design/minecraft-evenings/Minecraft\ Evenings.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'goodbrush';
+    src: url('Design/good_brush/Good\ Brush.otf') format('opentype');
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  #menuButtonsContainer button{
+    appearance: button;
+    background-color: #1db566;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   #menuButtonsContainer button:after {
+    background-clip: padding-box;
+    background-color: #1ae87d;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   #menuButtonsContainer button:main, #menuButtonsContainer button:focus {
+    user-select: auto;
+   }
+   
+   #menuButtonsContainer button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   #menuButtonsContainer button:disabled {
+    cursor: auto;
+   }
+   
+   #menuButtonsContainer button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   #menuButtonsContainer button:active {
+    padding-bottom: 10px;
+   }

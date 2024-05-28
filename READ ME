@@ -1,0 +1,21 @@
+#CS5003 Group A
+
+1. Install 
+	Run 'npm install' in the project root
+
+2. Running the server
+	Run 'node server.js'
+	Now the server is activated.
+
+3. Navigate to localhost:3000 in web browser
+
+4. Click the register button, create your own account (It will be lost when the server is reset)
+5. Login
+6. Click 'Join Game' -- You are the player 1.
+7. Player 2 can join the game as the same way.
+8. After two players finish joining, click 'start game'
+9. Enjoy!
+
+* You can use one of the following two test users to log into the game:
+- username: 1; password: 1
+- username: 2; password: 2
